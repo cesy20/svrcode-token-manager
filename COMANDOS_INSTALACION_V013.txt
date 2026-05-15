@@ -1,0 +1,27 @@
+COMANDOS DE INSTALACIÓN / ACTUALIZACIÓN - SVRCODE TOKEN MANAGER v0.14
+
+INSTALACIÓN COMPLETA:
+cd /root
+apt update -y && apt install -y unzip curl
+unzip -o svrcode-token-manager-v013-select-users.zip
+cd svrcode-token-manager-v013-select-users
+sudo bash install.sh 5000
+sudo svrtoken menu
+
+SI YA TIENES TOKEN MANAGER INSTALADO:
+cd /root
+unzip -o svrcode-token-manager-v013-select-users.zip
+cd svrcode-token-manager-v013-select-users
+sudo bash PATCH_MENU_GIT_V014.sh
+sudo svrtoken menu
+
+SUBMENÚ GIT:
+sudo svrtoken git-menu
+sudo svrtoken git-edit
+sudo svrtoken git-sync
+sudo svrtoken git-test
+
+NUEVO FLUJO DEL MENÚ:
+- Ya no escribe Token ID para renovar/desactivar/eliminar/editar protocolo.
+- El menú muestra lista numerada con cliente y token.
+- Selecciona el número del usuario y aplica la acción.

@@ -1,0 +1,4 @@
+bash /opt/svrcode-token-manager/uninstall.sh
+
+# Para borrar todo incluyendo tokens:
+bash /opt/svrcode-token-manager/uninstall.sh --purge

@@ -1,0 +1,27 @@
+SVRCODE Token Manager v0.14
+
+Cambio solicitado:
+- En el menú principal, las acciones ya no piden escribir Token ID completo.
+- Ahora muestran una lista numerada con CLIENTE + TOKEN ID + estado + protocolo + restante.
+- El operador selecciona el usuario/token por número.
+
+Acciones ajustadas:
+- Ver detalle.
+- Renovar.
+- Activar.
+- Desactivar.
+- Cambiar protocolo.
+- Cambiar límite de dispositivos.
+- Cambiar nombre.
+- Reiniciar dispositivos.
+- Probar validación local.
+- Eliminar.
+- Check user online.
+
+No se cambió:
+- API del token.
+- Base de datos.
+- Formato tokens.db.
+- Submenú Git.
+- Endpoints de actualización.
+- Puertos.

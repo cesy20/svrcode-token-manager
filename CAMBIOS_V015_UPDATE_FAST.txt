@@ -1,0 +1,6 @@
+SVRCODE Token Manager v0.15
+- /api/update/free y /api/update/vip ahora sincronizan si la meta está vencida.
+- /config/free.json y /config/vip.json ahora intentan sincronizar antes de servir si la cache está vencida.
+- Evita depender de /api/admin/sync desde la app.
+- /online acepta X-App-Key y también ?key= como respaldo.
+- UPDATE_SYNC_INTERVAL recomendado: 3 segundos.

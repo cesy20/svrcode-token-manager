@@ -1,0 +1,40 @@
+COMANDOS DE INSTALACIÓN / ACTUALIZACIÓN - SVRCODE TOKEN MANAGER v0.14
+
+1) Subir el ZIP a la VPS, por ejemplo a /root/
+
+2) Entrar a la VPS:
+   ssh root@IP_DE_TU_VPS
+
+3) Descomprimir e instalar en el mismo puerto del token manager:
+   cd /root
+   apt update -y && apt install -y unzip curl
+   unzip -o svrcode-token-manager-v013-menu-git.zip
+   cd svrcode-token-manager-v013-menu-git
+   sudo bash install.sh 5000
+
+4) Abrir menú bonito:
+   sudo svrtoken menu
+
+5) Entrar al submenú Git:
+   Opción 21 🚀 Git / Actualización de servidores
+
+6) También puedes abrir directo:
+   sudo svrtoken git-menu
+
+7) Editar datos GitHub:
+   sudo svrtoken git-edit
+
+8) Sincronizar al instante:
+   sudo svrtoken git-sync
+
+9) Probar endpoints:
+   sudo svrtoken git-test
+
+10) Ver webhook:
+   sudo svrtoken git-webhook
+
+ENDPOINTS PARA LA APP
+FREE check : http://IP_DE_TU_VPS:5000/api/update/free
+VIP check  : http://IP_DE_TU_VPS:5000/api/update/vip
+FREE json  : http://IP_DE_TU_VPS:5000/config/free.json
+VIP json   : http://IP_DE_TU_VPS:5000/config/vip.json

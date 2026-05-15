@@ -1,0 +1,1 @@
+apt update -y && apt install -y git curl python3 python3-venv python3-pip unzip && rm -rf /root/svrcode-token-manager && git clone https://github.com/cesy20/svrcode-token-manager.git /root/svrcode-token-manager && cd /root/svrcode-token-manager && chmod +x install.sh svrcode-token.sh uninstall.sh && bash install.sh 5000

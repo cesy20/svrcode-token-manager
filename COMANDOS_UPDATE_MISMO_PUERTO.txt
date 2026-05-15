@@ -1,0 +1,18 @@
+# Aplicar sobre una instalación existente del token manager
+chmod +x PATCH_UPDATE_MISMO_PUERTO.sh
+sudo bash PATCH_UPDATE_MISMO_PUERTO.sh
+
+# Editar token de GitHub en la VPS
+sudo nano /etc/svrcode-token/config.env
+# Cambiar:
+# GITHUB_TOKEN=COLOCA_AQUI_TU_TOKEN_DE_GITHUB
+
+# Reiniciar
+sudo systemctl restart svrcode-token-api.service
+
+# Probar
+curl http://127.0.0.1:5000/health
+curl http://127.0.0.1:5000/api/update/free
+curl http://127.0.0.1:5000/api/update/vip
+curl http://127.0.0.1:5000/config/free.json
+curl http://127.0.0.1:5000/config/vip.json

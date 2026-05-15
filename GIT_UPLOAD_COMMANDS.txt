@@ -1,0 +1,13 @@
+# COMANDOS PARA SUBIR ESTE TOKEN MANAGER AL GIT
+# Ejecutar dentro de la carpeta svrcode-token-manager-v012-menu-git
+
+git init
+git add .
+git commit -m "SVRCODE Token Manager v0.12 menu git update channel"
+git branch -M main
+git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+git push -u origin main
+
+# Si ya existe el repo remoto:
+# git remote set-url origin https://github.com/TU_USUARIO/TU_REPO.git
+# git push -u origin main

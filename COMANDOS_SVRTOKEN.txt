@@ -1,0 +1,28 @@
+COMANDOS SVRTOKEN v0.10
+
+Abrir menu:
+  sudo svrtoken
+
+Crear cliente/token con Token ID obligatorio:
+  sudo svrtoken add cliente1 all 60 1 MI_TOKEN_ID
+
+Ver clientes/tokens:
+  sudo svrtoken list
+
+Ver usuarios online:
+  sudo svrtoken online
+
+Check user online:
+  sudo svrtoken check-user TOKEN_ID
+
+API config:
+  sudo svrtoken api-config
+
+Estado de API:
+  sudo svrtoken status
+
+Desinstalar:
+  bash /opt/svrcode-token-manager/uninstall.sh
+
+Desinstalar borrando datos:
+  bash /opt/svrcode-token-manager/uninstall.sh --purge

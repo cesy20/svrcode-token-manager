@@ -1,0 +1,8 @@
+SVRCODE Token Manager v0.16
+
+- Sincronización de FREE/VIP por git clone/fetch local en la VPS.
+- Evita límite de GitHub API y caché RAW.
+- /api/update/free?force=1 fuerza fetch del repo.
+- /api/update/vip?force=1 fuerza fetch del repo.
+- /config/free.json?force=1 y /config/vip.json?force=1 también pueden forzar sync.
+- Requiere git instalado en la VPS.

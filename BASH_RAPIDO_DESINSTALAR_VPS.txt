@@ -1,0 +1,15 @@
+============================================================
+BASH RÁPIDO PARA DESINSTALAR EN VPS
+============================================================
+
+Desinstalar normal:
+
+bash /opt/svrcode-token-manager/uninstall.sh
+
+Desinstalar y borrar todo, incluyendo tokens/configuración:
+
+bash /opt/svrcode-token-manager/uninstall.sh --purge
+
+Comprobar que el servicio ya no está activo:
+
+systemctl status svrcode-token-api --no-pager

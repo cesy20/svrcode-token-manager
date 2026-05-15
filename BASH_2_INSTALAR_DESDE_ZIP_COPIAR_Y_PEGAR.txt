@@ -1,0 +1,4 @@
+unzip svrcode-token-manager-v10-token-id-obligatorio.zip
+cd svrcode-token-manager-v10-token-id-obligatorio
+chmod +x install.sh svrcode-token.sh uninstall.sh
+bash install.sh 5000

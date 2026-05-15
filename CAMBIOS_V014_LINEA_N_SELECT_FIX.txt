@@ -1,0 +1,14 @@
+SVRCODE Token Manager v0.14
+
+Corrección puntual:
+- Corregido error: /usr/local/bin/svrtoken: line 915: n: unbound variable.
+- select_token_menu ahora inicializa n=0 antes de listar clientes.
+- Afectaba acciones como eliminar, activar, desactivar, renovar, editar protocolo y demás acciones por selección de usuario.
+
+No se tocó:
+- API token.
+- Base de datos.
+- Submenú Git.
+- Endpoints update.
+- Puertos.
+- Formato tokens.db.

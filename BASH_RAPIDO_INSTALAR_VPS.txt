@@ -1,0 +1,23 @@
+============================================================
+BASH RÁPIDO PARA INSTALAR EN VPS DESDE GITHUB
+============================================================
+
+Pegar como root en la VPS:
+
+apt update -y && apt install -y git curl python3 python3-venv python3-pip unzip && rm -rf /root/svrcode-token-manager && git clone https://github.com/cesy20/svrcode-token-manager.git /root/svrcode-token-manager && cd /root/svrcode-token-manager && chmod +x install.sh svrcode-token.sh uninstall.sh && bash install.sh 5000
+
+Luego abrir menú:
+
+svrcode-token
+
+Verificar API:
+
+curl http://127.0.0.1:5000/health
+
+Ver usuarios online:
+
+svrcode-token online
+
+Check user online:
+
+svrcode-token check-user TOKEN_ID

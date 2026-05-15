@@ -1,0 +1,24 @@
+SVRCODE TOKEN MANAGER v0.10
+
+CAMBIO IMPORTANTE:
+Al crear cliente desde el menu svrtoken, ahora pide solamente:
+
+  Token ID:
+
+El Token ID es obligatorio.
+No hay modo AUTO y no genera token automaticamente.
+
+COMANDO DEL MENU:
+  sudo svrtoken
+
+INSTALAR DESDE ZIP:
+  unzip svrcode-token-manager-v10-token-id-obligatorio.zip
+  cd svrcode-token-manager-v10-token-id-obligatorio
+  chmod +x install.sh svrcode-token.sh uninstall.sh
+  bash install.sh 5000
+
+CREAR TOKEN DIRECTO:
+  sudo svrtoken add cliente1 all 60 1 MI_TOKEN_ID
+
+DESINSTALAR:
+  bash /opt/svrcode-token-manager/uninstall.sh
